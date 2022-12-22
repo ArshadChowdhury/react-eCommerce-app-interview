@@ -167,6 +167,7 @@ header ul li a:hover{
         height: 100vh;
         background-color: #fff;
         z-index: 999;
+
     } 
     header ul li{
         width: 100%;
@@ -193,5 +194,10 @@ header ul li a:hover{
 
    .close{
     right: 45%;
+   }
+
+   .close .home-btn{
+    background-color:#ff014f;
+    color:#ff014f;
    }
 }
