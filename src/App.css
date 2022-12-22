@@ -1,41 +1,58 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body{
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.background{
+  background-color: #f6f9fc;
+  padding: 50px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container{
+  max-width: 90%;
+  margin: auto;
 }
 
-.card {
-  padding: 2em;
+.d_flex{
+  display: flex;
+  justify-content: space-between;
 }
 
-.read-the-docs {
-  color: #888;
+.c_flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f_flex{
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+li{
+  list-style: none;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.right-text{
+  text-align: right;
 }
