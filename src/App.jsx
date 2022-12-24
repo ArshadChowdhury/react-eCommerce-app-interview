@@ -13,10 +13,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<Header />} />
-        <Route path="/pages" element={<Pages />} />
+          <Route path="/" element={<Header />} />
+          <Route path="/pages" element={<Pages />} />
         </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
     </>
   )
 }

@@ -1,10 +1,18 @@
 import React from 'react';
+import Categories from './Categories';
+import Slidecard from './Slidecard';
 import "./Mainpage.css";
+
 
 const Mainpage = () => {
   return (
     <>
-    <h1>Mainpage</h1>
+    <section className="main-page">
+      <div className="container d_flex">
+        <Categories />
+        <Slidecard />
+      </div>
+    </section>
     </>
   )
 }

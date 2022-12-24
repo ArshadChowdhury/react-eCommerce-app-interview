@@ -2,7 +2,11 @@ import React from 'react';
 import Head from "./Head"
 import Navbar from './Navbar';
 import Search from './Search';
+import Mainpage from '../Mainpage/Mainpage';
 import "./Header.css"
+
+
+
 
 const Header = () => {
   return (
@@ -10,6 +14,7 @@ const Header = () => {
     <Head />
     <Search />
     <Navbar />
+    <Mainpage />
     </>
   )
 }
