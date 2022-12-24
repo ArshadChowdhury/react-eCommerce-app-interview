@@ -1,6 +1,6 @@
 import React from 'react';
 import Categories from './Categories';
-import Slidecard from './Slidecard';
+import Slider from './Slider';
 import "./Mainpage.css";
 
 
@@ -10,7 +10,7 @@ const Mainpage = () => {
     <section className="main-page">
       <div className="container d_flex">
         <Categories />
-        <Slidecard />
+        <Slider />
       </div>
     </section>
     </>

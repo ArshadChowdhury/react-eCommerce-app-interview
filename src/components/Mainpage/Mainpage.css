@@ -1,0 +1,50 @@
+.main-page{
+    margin-top: 20px;
+}
+
+.slider h1{
+    font-size: 55px;
+    padding-top: 20px;
+}
+
+.slider p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.slider ul{
+    position: absolute;
+    bottom: 110px;
+}
+
+.slider ul li button{
+    background:transparent;
+    color: transparent;
+}
+
+.slider ul li button::before{
+    font-size: 15px;
+    color: #0f3460;
+    position: absolute;
+    top : 2px;
+    left: 0;
+    margin: auto;
+}
+
+.slider .box {
+   display: flex !important; 
+}
+
+
+.slider .box .left{
+    width: 70%;
+}
+
+.slider .box .right{
+    width: 30%;
+}
+
+.slider .box img{
+    height: 100%;
+    width: 100%;
+}

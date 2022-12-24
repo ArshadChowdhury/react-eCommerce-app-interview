@@ -54,7 +54,6 @@ const Categories = () => {
         <>
             <div className="category">{
                 categoryData.map((category, index) => {
-                    console.log(category.categoryImg);
                     return (
                         <div className="box f_flex" key={index}>
                             <img src={category.categoryImg} alt="no img" />

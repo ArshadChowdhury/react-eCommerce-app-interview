@@ -1,94 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
 }
 
-.background{
+.background {
   background-color: #f6f9fc;
   padding: 50px 0;
 }
 
-.container{
+.container {
   max-width: 90%;
   margin: auto;
 }
 
-.d_flex{
+.d_flex {
   display: flex;
   justify-content: space-between;
 }
 
-.c_flex{
+.c_flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.f_flex{
+.f_flex {
   display: flex;
 }
 
-a{
+a {
   text-decoration: none;
   color: #000;
 }
 
-li{
+li {
   list-style: none;
 }
 
-.uppercase{
+.uppercase {
   text-transform: uppercase;
 }
 
-.capitalize{
-    text-transform: capitalize;
+.capitalize {
+  text-transform: capitalize;
 }
 
-.right-text{
+.right-text {
   text-align: right;
 }
 
 /* Category CSS */
-.contentWidth{
+.contentWidth {
   width: 77%;
 }
 
-.category{
- width: 23%;
- box-shadow: rgb(43 52 69/ 10%) 0 4px 16px;
- height: 510px;
- padding: 15px 0;
- border-radius: 5px;
- margin-top: 5px; 
+.category {
+  width: 23%;
+  box-shadow: rgb(43 52 69/ 10%) 0 4px 16px;
+  height: 510px;
+  padding: 15px 0;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
-.category img{
+.category img {
   width: 30px;
   height: 30px;
   margin-top: 10px;
   object-fit: contain;
 }
 
-.category span{
+.category span {
   margin: 10px 20px;
   text-transform: capitalize;
 }
 
-.category .box{
+.category .box {
   transition: 0.5s;
   padding: 0 20px;
 }
 
-.category .box:hover{
+.category .box:hover {
   background-color: #ffe1ef;
   cursor: pointer;
+}
+
+/* slider button of visit collecitons */
+.btn-primary {
+  background-color: #e94560;
+  padding: 13px 40px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.top{
+  margin-top: 70px;
 }
