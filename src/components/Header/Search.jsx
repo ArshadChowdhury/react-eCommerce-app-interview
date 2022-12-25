@@ -2,7 +2,7 @@ import React from 'react';
 import logo from "../../assets/Daraz-Logo.jpg";
 import { Link } from 'react-router-dom';
 
-const Search = () => {
+const Search = ({cartItems}) => {
 
     // window.addEventListener("scroll", ()=>{
     //     const search = document.querySelector(".search");
@@ -30,7 +30,7 @@ const Search = () => {
                         <div className='cart'>
                             <Link to="/cart">
                                 <i className='fa fa-shopping-bag icon-circle'></i>
-                                <span>0</span>
+                                <span>{cartItems.length === 0 ? 0 : cartItems.length}</span>
                             </Link>
                         </div>
                     </div>

@@ -2,7 +2,6 @@ import React from 'react';
 import Categories from './Categories';
 import Slider from './Slider';
 import "./Mainpage.css";
-import Flashdeals from '../FlashDeals/Flashdeals';
 
 
 const Mainpage = () => {
@@ -14,7 +13,6 @@ const Mainpage = () => {
         <Slider />
       </div>
     </section>
-    <Flashdeals />
     </>
   )
 }

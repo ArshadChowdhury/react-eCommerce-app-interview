@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from "react-slick";
-import flashDeasData from "./flashDealsData";
 
 const NextArrow = (props) =>{
     const {onClick} = props;
@@ -27,7 +26,13 @@ const PrevArrow = (props) =>{
     )
 }
 
-const Flashcard = () => {
+const Flashcard = ({flashDealsData, addToCart}) => {
+
+    const [count, setCount] = useState(0);
+    const increment = () => {
+        setCount(count + 1)
+    }
+
     const settings = {
         dots: false,
         infinite: true,
@@ -40,16 +45,16 @@ const Flashcard = () => {
     return (
         <>
         <Slider {...settings}>
-        {flashDeasData.map((product, index) => {
+        {flashDealsData.map((product, index) => {
             return (
                 <div className="box" key={index}>
                 <div className="product mtop">
                     <div className="img">
                         <span className='discount'>{product.discount}% Off</span>
-                        <img src={product.cover} alt="" />
+                        <img src={product.img} alt="" />
                         <div className="product-like">
-                            <label>0</label> <br />
-                            <i className='fa-regular fa-heart'></i>
+                            <label>{count}</label> <br />
+                            <i className='fa-regular fa-heart' onClick={increment}></i>
                         </div>
                     </div>
                     <div className="product-details">
@@ -63,7 +68,7 @@ const Flashcard = () => {
                         </div>
                         <div className="price">
                             <h4>{product.price}.00</h4>
-                            <button>
+                            <button onClick={() => addToCart(product)}>
                                 <i className='fa fa-plus'></i>
                             </button>
                         </div>
