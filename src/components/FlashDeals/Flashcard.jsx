@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Slider from "react-slick";
+import Topcate from '../Top/Topcate';
 
 const NextArrow = (props) =>{
     const {onClick} = props;
@@ -78,7 +79,9 @@ const Flashcard = ({flashDealsData, addToCart}) => {
             )
 
         })}
+      
             </Slider>
+            <Topcate />
         </>
     )
 }

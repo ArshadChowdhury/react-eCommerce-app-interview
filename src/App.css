@@ -118,3 +118,15 @@ li {
   cursor: pointer;
 }
 
+
+.discount{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e94560;
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 50px;
+  color: #fff;
+  margin: 20px;
+}

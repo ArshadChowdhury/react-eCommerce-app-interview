@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from '../Header/Head';
 import Search from '../Header/Search';
+import Navbar from '../Header/Navbar';
+import Topcate from '../Top/Topcate';
 import "./Cart.css";
 
 const Cart = ({ cartItems, addToCart, deleteFromCart }) => {
@@ -10,6 +12,7 @@ const Cart = ({ cartItems, addToCart, deleteFromCart }) => {
         <>
             <Head />
             <Search cartItems={cartItems} />
+            <Navbar />
             <section className="cart-items">
                 <div className="container d_flex">
                     <div className="cart-details">
