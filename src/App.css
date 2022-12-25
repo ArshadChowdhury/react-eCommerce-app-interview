@@ -106,3 +106,15 @@ li {
 .top{
   margin-top: 70px;
 }
+
+/* Flash Deals CSS */
+
+.heading i{
+  color: #e94560;
+  margin: 10px;
+}
+
+.prev, .next{
+  cursor: pointer;
+}
+
