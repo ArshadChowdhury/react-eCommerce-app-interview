@@ -1,4 +1,4 @@
-const Sdata = [
+const shoppingData = [
     {
       id: 1,
       title: "50% Off On Your First Shopping",
@@ -24,4 +24,4 @@ const Sdata = [
       cover: "../../src/assets/slide-4.png",
     },
   ]
-  export default Sdata;
+export default shoppingData;

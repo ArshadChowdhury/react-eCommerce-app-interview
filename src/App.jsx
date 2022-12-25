@@ -6,9 +6,11 @@ import {
   Route,
 } from "react-router-dom";
 import Pages from "./components/Pages/Pages";
+import { useState } from "react";
 
 function App() {
-
+  const [cartItems, setCartItems] = useState([])
+ 
   return (
     <>
       <BrowserRouter>

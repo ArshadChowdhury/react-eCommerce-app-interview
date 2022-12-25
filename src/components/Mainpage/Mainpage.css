@@ -1,50 +1,126 @@
-.main-page{
+.main-page {
     margin-top: 20px;
 }
 
-.slider h1{
+.slider h1 {
     font-size: 55px;
     padding-top: 20px;
 }
 
-.slider p{
+.slider p {
     margin: 20px 0;
     font-size: 20px;
 }
 
-.slider ul{
+.slider ul {
     position: absolute;
     bottom: 110px;
 }
 
-.slider ul li button{
-    background:transparent;
+.slider ul li button {
+    background: transparent;
     color: transparent;
 }
 
-.slider ul li button::before{
+.slider ul li button::before {
     font-size: 15px;
     color: #0f3460;
     position: absolute;
-    top : 2px;
+    top: 2px;
     left: 0;
     margin: auto;
 }
 
 .slider .box {
-   display: flex !important; 
+    display: flex !important;
 }
 
 
-.slider .box .left{
+.slider .box .left {
     width: 70%;
 }
 
-.slider .box .right{
+.slider .box .right {
     width: 30%;
 }
 
-.slider .box img{
+.slider .box img {
     height: 100%;
     width: 100%;
+}
+
+.img img {
+    height: 300px;
+    width: 350px;
+}
+
+/* Product Related CSS */
+
+.product {
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: rgb(3 0 71/ 9%) 0 1px 3px;
+    margin: 10px;
+}
+
+.product h3 {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.product .rate i {
+    font-size: 15px;
+    color: #ffcd4e;
+    margin: 5px 5px 5px 0;
+}
+
+.product .price {
+    display: flex;
+    justify-content: space-between;
+    color: #e94560;
+}
+
+.product button{
+    background: none;
+    color: #e94560;
+    font-size: 20px;
+    border: 1px solid rgb(3 0 71/9%) ;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.product button:hover{
+    cursor: pointer;
+    background: #e94560;
+    color: #fff;
+}
+
+.product-like{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.product-like label{
+    background-color: #0f3460;
+    padding: 1px 10px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.product-like i{
+    font-size: 20px;
+    margin: 10px 3px;
+}
+
+.product:hover .product-like{
+    opacity: 1;
 }

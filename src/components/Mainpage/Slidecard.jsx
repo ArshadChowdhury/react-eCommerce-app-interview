@@ -1,5 +1,5 @@
 import React from 'react';
-import sData from './sData';
+import shoppingData from './shoppingData';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -19,7 +19,7 @@ const Slidecard = () => {
     return (
         <>
         <Slider {...settings}>
-        {sData.map((value, index)=>{
+        {shoppingData.map((value, index)=>{
            return( <div className="box d_flex top" key={index}>
                 <div className="left">
                     <h1>{value.title}</h1>
