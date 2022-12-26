@@ -1,46 +1,46 @@
 /* Head Part CSS */
 
-.head{
+.head {
     background-color: #0f3460;
     padding: 10px 0;
     color: #fff;
 }
 
-.head i{
-    margin:0 10px;
+.head i {
+    margin: 0 10px;
 }
 
-.head label{
+.head label {
     margin-right: 30px;
     font-size: 13px;
     cursor: pointer;
-    
+
 }
 
 /* Head Part CSS */
 
 /* Search Part CSS */
 
-.search{
+.search {
     padding: 20px 0;
 }
 
-.search .logo img{
+.search .logo img {
     width: 100px;
     height: 60px;
 }
 
-.search .width{
+.search .width {
     width: 20%;
 }
 
-.search-box{
+.search-box {
     width: 80%;
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 50px;
 }
 
-.search-box i{
+.search-box i {
     width: 5%;
     text-align: center;
     font-size: 90%;
@@ -48,27 +48,27 @@
     padding: 17px;
 }
 
-.search-box input{
+.search-box input {
     width: 100%;
     padding: 10px;
 }
 
-::placeholder{
+::placeholder {
     font-size: 15px;
 }
 
-.search-box span{
+.search-box span {
     width: 20%;
     opacity: 0.5;
     border-left: 2px solid rgba(0, 0, 0, 0.1);
     padding: 10px;
 }
 
-.cart{
+.cart {
     position: relative;
 }
 
-.search .cart span{
+.search .cart span {
     position: absolute;
     top: -10px;
     right: 0;
@@ -81,7 +81,7 @@
     color: #fff;
 }
 
-.search .f_flex{
+.search .f_flex {
     justify-content: end;
 }
 
@@ -96,49 +96,49 @@
     margin-top: 5px;
 }
 
-.categories span{
+.categories span {
     margin-right: 20px;
     font-size: 30px;
     margin-top: 10px;
 }
 
-.categories h4{
+.categories h4 {
     font-weight: 600;
     margin-top: 12px;
 }
 
-.categories h4 i{
+.categories h4 i {
     margin-left: 10px;
 }
 
-header{
+header {
     height: 8vh;
     box-shadow: -1px 15px 17px -8px rgba(0, 0, 0, 0.1);
 }
 
-header ul{
+header ul {
     line-height: 8vh;
 }
 
-header ul li{
+header ul li {
     margin-left: 30px;
 }
 
-header ul li a{
+header ul li a {
     transition: 0.5s;
     font-size: 15px;
     font-weight: 400;
 }
 
-header ul li a:hover{
+header ul li a:hover {
     color: #e94560;
 }
 
-.open{
+.open {
     display: none;
 }
 
-.active{
+.active {
     height: 12vh;
     position: fixed;
     top: 0;
@@ -149,21 +149,22 @@ header ul li a:hover{
     transition: 0.5s;
 }
 
-.categories:hover{
+.categories:hover {
     cursor: pointer;
 }
 
-input,button{
+input,
+button {
     border: none;
     outline: none;
     background-color: none;
 }
 
-.row{
+.row {
     width: 50%;
 }
 
-.icon-circle{
+.icon-circle {
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -173,37 +174,42 @@ input,button{
     border-radius: 50%;
 }
 
-.boxShadow{
+.boxShadow {
     box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
 }
 
 @media (max-width:768px) {
-    header ul{
+    header ul {
         padding-top: 30px;
-    } 
-    .nav-links-MobileMenu{
+    }
+
+    .nav-links-MobileMenu {
         position: absolute;
         display: block;
         list-style-type: none;
         left: 0;
-        top : 0;
+        top: 0;
         transition: 0.5s;
         width: 60%;
         height: 100vh;
         background-color: #fff;
         z-index: 999;
 
-    } 
-    header ul li{
+    }
+
+    header ul li {
         width: 100%;
         transition: all 0.5s ease-in-out;
         text-transform: uppercase;
         line-height: 70px;
-    }  
-    header .link{
+    }
+
+    header .link {
         display: none;
     }
-    .close, .open{
+
+    .close,
+    .open {
         position: absolute;
         top: 25px;
         right: 15px;
@@ -213,16 +219,39 @@ input,button{
         z-index: 999;
     }
 
-    .fa-search{
+    .fa-search {
         margin: 6px 3px 0 0;
-   }
+    }
 
-   .close{
-    right: 45%;
-   }
+    .close {
+        right: 45%;
+    }
 
-   .close .home-btn{
-    background-color:#ff014f;
-    color:#ff014f;
-   }
+    .close .home-btn {
+        background-color: #ff014f;
+        color: #ff014f;
+    }
 }
+
+/* Top Categories Part CSS */
+
+.heading .heading-left i {
+    font-size: 30px;
+}
+
+.heading .heading-left h2 {
+    font-size: 25px;
+    margin: 5px;
+}
+
+.heading .heading-right,
+.heading .heading-right i {
+    text-align: right;
+    color: grey;
+    cursor: pointer;
+}
+
+
+
+
+/* Top Categories Part CSS */

@@ -1,58 +1,21 @@
 import React, { useState } from 'react';
-import Slider from "react-slick";
-import Topcate from '../Top/Topcate';
 
-const NextArrow = (props) =>{
-    const {onClick} = props;
-    return (
-
-        <div className="control-btn" onClick={onClick}>
-            <button className='next'>
-                <i className='fa fa-long-arrow-alt-right'></i>
-            </button>
-        </div>
-
-    )
-}
-const PrevArrow = (props) =>{
-    const {onClick} = props;
-    return (
-
-        <div className="control-btn" onClick={onClick}>
-            <button className='prev'>
-                <i className='fa fa-long-arrow-alt-left'></i>
-            </button>
-        </div>
-
-    )
-}
-
-const Flashcard = ({flashDealsData, addToCart}) => {
+const Shopcart = ({shopItems, addToCart}) => {
 
     const [count, setCount] = useState(0);
     const increment = () => {
         setCount(count + 1)
     }
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />
-      };
     return (
         <>
-        <Slider {...settings}>
-        {flashDealsData.map((product, index) => {
+        {shopItems.map((product, index) => {
             return (
                 <div className="box" key={index}>
                 <div className="product mtop">
                     <div className="img">
                         <span className='discount'>{product.discount}% Off</span>
-                        <img src={product.img} alt="" />
+                        <img src={product.cover} alt="" />
                         <div className="product-like">
                             <label>{count}</label> <br />
                             <i className='fa-regular fa-heart' onClick={increment}></i>
@@ -80,9 +43,8 @@ const Flashcard = ({flashDealsData, addToCart}) => {
 
         })}
       
-            </Slider>
         </>
     )
 }
 
-export default Flashcard
+export default Shopcart;

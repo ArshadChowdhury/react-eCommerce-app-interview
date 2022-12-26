@@ -2,10 +2,9 @@ import React from 'react';
 import Head from '../Header/Head';
 import Search from '../Header/Search';
 import Navbar from '../Header/Navbar';
-import Topcate from '../Top/Topcate';
 import "./Cart.css";
 
-const Cart = ({ cartItems, addToCart, deleteFromCart }) => {
+const Cart = ({ cartItems, addToCart, deleteFromCart, shopItems}) => {
 
     const totalPrice = cartItems.reduce((price, item) => price + item.qty * item.price, 0)
     return (

@@ -7,10 +7,12 @@ import {
 } from "react-router-dom";
 import { useState } from "react";
 import Data from "./components/FlashDeals/flashDealsData";
-import Cart from "./components/Cart/Cart"
+import Cart from "./components/Cart/Cart";
+import ShopData from "./components/Shop/shopData";
 
 function App() {
   const {productItems} = Data;
+  const {shopItems} = ShopData;
   const [cartItems, setCartItems] = useState([]);
   const addToCart = (product) => {
     const productExists = cartItems.find((item) => item.id === product.id);
@@ -35,10 +37,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Header flashDealsData={productItems} cartItems={cartItems} addToCart={addToCart}/>}/>
+          <Route path="/" element={<Header flashDealsData={productItems} cartItems={cartItems} addToCart={addToCart} shopItems={shopItems}/>}/>
         </Routes>
         <Routes>
-          <Route path="/cart" element={<Cart cartItems={cartItems} addToCart={addToCart} deleteFromCart={deleteFromCart} />}></Route>
+          <Route path="/cart" element={<Cart cartItems={cartItems} addToCart={addToCart} deleteFromCart={deleteFromCart} shopItems={shopItems} />}></Route>
         </Routes>
       </BrowserRouter>
     </>
