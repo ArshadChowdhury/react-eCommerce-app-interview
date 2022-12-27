@@ -1,0 +1,74 @@
+.loginform{
+    height: 60vh;
+    width: 30vw;
+    background-color: #ccd2d7; 
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.container-login{
+    padding: 40px;
+}
+
+.wrapper input{
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.name{
+    padding-left: 25px;
+}
+
+.heading h1{
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+
+.heading p{
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.heading p span a{
+    color:blue;
+}
+.heading p span a:hover{
+    text-decoration: underline;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn{
+    height: 50px;
+    width: 150px;
+    margin-top: 40px;
+    background-color: lightblue;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.submit-btn:hover{
+    cursor: pointer;  
+    background-color: grey;
+}
+
+.forgot-pass{
+    margin-top: 40px;
+}
+
+.forgot-pass span a{
+    color:blue;
+}
+
+.forgot-pass span a:hover{
+    text-decoration: underline;
+}

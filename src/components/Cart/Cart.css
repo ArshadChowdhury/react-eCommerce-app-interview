@@ -16,12 +16,13 @@
 }
 
 .cart-total .checkout{
-    height: 50px;
-    width: 100px;
+    height: 75px;
+    width: 150px;
     margin-left: 200px;
     margin-top: 20px;
     background-color:antiquewhite;
     color: black;
+    padding: 15px;
 }
 
 .cart-list {

@@ -90,7 +90,7 @@
 .categories {
     background-color: #f6f9fc;
     padding: 0 30px;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 6vh;
     margin-top: 5px;
 }
@@ -146,10 +146,6 @@ header ul li a:hover {
     background-color: #fff;
     box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
-}
-
-.categories:hover {
-    cursor: pointer;
 }
 
 input,

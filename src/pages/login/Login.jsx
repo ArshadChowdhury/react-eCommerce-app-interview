@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
+import Loginform from '../../components/Loginform/Loginform';
 
-const Login = () => {
+const Login = ({cartItems}) => {
   return (
     <>
-    <Header />
+    <Header cartItems={cartItems}/>
+    <Loginform />
     </>
   )
 }
 
-export default Login
+export default Login;
