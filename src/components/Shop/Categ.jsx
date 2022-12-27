@@ -1,29 +1,29 @@
 import React from 'react'
 
-const Categ = ({shopItems}) => {
+const Categ = () => {
     const data = [
         {
-          cateImg: "../../src/assets/brand-1.png",
+          cateImg: "./assets/brand/brand-1.png",
           cateName: "Apple",
         },
         {
-          cateImg: "../../src/assets/brand-2.png",
+          cateImg: "./assets/brand/brand-2.png",
           cateName: "Samasung",
         },
         {
-          cateImg: "../../src/assets/brand-3.png",
+          cateImg: "./assets/brand/brand-3.png",
           cateName: "Oppo",
         },
         {
-          cateImg: "../../src/assets/brand-2.png",
+          cateImg: "./assets/brand/brand-2.png",
           cateName: "Vivo",
         },
         {
-          cateImg: "../../src/assets/brand-1.png",
+          cateImg: "./assets/brand/brand-1.png",
           cateName: "Redimi",
         },
         {
-          cateImg: "../../src/assets/brand-2.png",
+          cateImg: "./assets/brand/brand-2.png",
           cateName: "Sony",
         },
       ]

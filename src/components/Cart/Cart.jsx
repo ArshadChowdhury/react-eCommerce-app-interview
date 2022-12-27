@@ -1,17 +1,11 @@
 import React from 'react';
-import Head from '../Header/Head';
-import Search from '../Header/Search';
-import Navbar from '../Header/Navbar';
-import "./Cart.css";
+import "./cart.css";
 
-const Cart = ({ cartItems, addToCart, deleteFromCart, shopItems}) => {
+const Cart = ({ cartItems, addToCart, deleteFromCart , checkOut}) => {
 
     const totalPrice = cartItems.reduce((price, item) => price + item.qty * item.price, 0)
     return (
         <>
-            <Head />
-            <Search cartItems={cartItems} />
-            <Navbar />
             <section className="cart-items">
                 <div className="container d_flex">
                     <div className="cart-details">
@@ -54,6 +48,7 @@ const Cart = ({ cartItems, addToCart, deleteFromCart, shopItems}) => {
                             <h4>Total Price :</h4>
                             <h3>${totalPrice}.00</h3>
                         </div>
+                        <button className='checkout' onClick={()=> checkOut(cartItems)}>Checkout Now!</button>
                     </div>
 
                 </div>

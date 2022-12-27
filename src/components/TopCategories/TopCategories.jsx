@@ -1,7 +1,7 @@
 import React from 'react';
-import Topcart from './Topcart';
+import TopCategoriesCard from './TopCategoriesCard';
 
-const Topcate = () => {
+const TopCategories = () => {
   return (
     <>
     <section className="topCat background">
@@ -16,11 +16,11 @@ const Topcate = () => {
             <i className="fa fa-caret-right"></i>
           </div>
         </div>
-        <Topcart />
+        <TopCategoriesCard />
       </div>
     </section>
     </>
   )
 }
 
-export default Topcate
+export default TopCategories

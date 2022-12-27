@@ -15,7 +15,7 @@ const Shopcart = ({shopItems, addToCart}) => {
                 <div className="product mtop">
                     <div className="img">
                         <span className='discount'>{product.discount}% Off</span>
-                        <img src={product.cover} alt="" />
+                        <img src={product.img} alt="" />
                         <div className="product-like">
                             <label>{count}</label> <br />
                             <i className='fa-regular fa-heart' onClick={increment}></i>

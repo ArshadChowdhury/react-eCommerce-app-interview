@@ -1,6 +1,6 @@
 footer{
     background-color: #0f3460;
-    padding: 100px 0;
+    padding: 50px 10px;
     color: #fff;
 }
 
@@ -40,5 +40,13 @@ footer h2{
 footer li{
     margin-bottom: 10px;
     opacity: 0.5;
+    cursor: pointer;
 }
 
+.icon{
+    cursor: pointer;
+}
+
+.grid2 .box{
+    margin-left: 20px;
+}

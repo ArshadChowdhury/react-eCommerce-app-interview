@@ -1,6 +1,6 @@
 .cart-items {
     background: #f6f9fc;
-    height: auto;
+    min-height: 100vh;
     padding: 50px 0;
 }
 
@@ -15,19 +15,23 @@
     line-height: 50px;
 }
 
+.cart-total .checkout{
+    height: 50px;
+    width: 100px;
+    margin-left: 200px;
+    margin-top: 20px;
+    background-color:antiquewhite;
+    color: black;
+}
+
 .cart-list {
     background: white;
+    margin-top: 30px;
 }
 
-.cart-items .img {
+.cart-items .img img {
     width: 150px;
     height: 150px;
-}
-
-.cart-items img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 .cart-items .cart-details h3 {
@@ -90,3 +94,4 @@
     font-size: 15px;
     font-weight: 400;
 }
+

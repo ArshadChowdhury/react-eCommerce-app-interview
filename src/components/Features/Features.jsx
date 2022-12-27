@@ -1,7 +1,7 @@
 import React from 'react';
-import "./wrapper.css";
+import "./features.css";
 
-const Wrapper = () => {
+const Features = () => {
     const data = [
         {
           cover: 'fa-solid fa-truck-fast',
@@ -40,15 +40,13 @@ const Wrapper = () => {
         <div className="container grid2">
             {data.map((value,index)=>{
                 return(
-                    <>
                     <div className="product" key={index}>
-                        <div className="img icon-circle">
+                        <div className="img icon-circle" >
                             <i className={value.cover}></i>
                         </div>
                         <h3>{value.title}</h3>
                         <p>{value.desc}</p>
                     </div>
-                    </>
                 )
             })}
         </div>
@@ -57,4 +55,4 @@ const Wrapper = () => {
   )
 }
 
-export default Wrapper
+export default Features

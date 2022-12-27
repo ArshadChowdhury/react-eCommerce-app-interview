@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Slider from "react-slick";
-import Topcate from '../Top/Topcate';
 
 const NextArrow = (props) =>{
     const {onClick} = props;
@@ -27,10 +26,10 @@ const PrevArrow = (props) =>{
     )
 }
 
-const Flashcard = ({flashDealsData, addToCart}) => {
+const Flashcard = ({productItems, addToCart}) => {
 
     const [count, setCount] = useState(0);
-    const increment = () => {
+    const increment = (productID) => {
         setCount(count + 1)
     }
 
@@ -46,7 +45,7 @@ const Flashcard = ({flashDealsData, addToCart}) => {
     return (
         <>
         <Slider {...settings}>
-        {flashDealsData.map((product, index) => {
+        {productItems.map((product, index) => {
             return (
                 <div className="box" key={index}>
                 <div className="product mtop">

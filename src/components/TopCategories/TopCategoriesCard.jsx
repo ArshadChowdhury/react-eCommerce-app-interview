@@ -1,9 +1,9 @@
 import React from 'react';
-import tData from "./tData.js";
+import topCategoriesdata from "./topCategoriesData";
 import Slider from "react-slick";
-import "./Topcart.css"
+import "./topcategoriescard.css"
 
-const Topcart = () => {
+const TopCategoriesCard = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -16,7 +16,7 @@ const Topcart = () => {
     <>
     <Slider {...settings}>
     {
-      tData.map((value, index) => {
+      topCategoriesdata.map((value, index) => {
         return(
           <div className="box product" key={index}>
             <div className="nametop d_flex">
@@ -35,4 +35,4 @@ const Topcart = () => {
   )
 }
 
-export default Topcart
+export default TopCategoriesCard

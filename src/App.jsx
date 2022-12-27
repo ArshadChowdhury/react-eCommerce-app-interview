@@ -1,17 +1,11 @@
-import Header from "./components/Header/Header";
-import './App.css';
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-import { useState } from "react";
-import Data from "./components/FlashDeals/flashDealsData";
-import Cart from "./components/Cart/Cart";
+import React , {useState} from "react";
+import AllRoutes from "./allroutes/AllRoutes"
+import FlashDealsData from "./components/FlashDeals/flashDealsData";
 import ShopData from "./components/Shop/shopData";
+import "./App.css";
 
 function App() {
-  const {productItems} = Data;
+  const {productItems} = FlashDealsData;
   const {shopItems} = ShopData;
   const [cartItems, setCartItems] = useState([]);
   const addToCart = (product) => {
@@ -32,17 +26,17 @@ function App() {
 
   }
 
+  const checkOut = (cartItems) =>{
+      if(cartItems.length <= 0){
+        alert("Add something to the cart first to checkout");
+      } else {
+        alert("Thanks for shopping with us, come back soon again");
+      }
+  }
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Header flashDealsData={productItems} cartItems={cartItems} addToCart={addToCart} shopItems={shopItems}/>}/>
-        </Routes>
-        <Routes>
-          <Route path="/cart" element={<Cart cartItems={cartItems} addToCart={addToCart} deleteFromCart={deleteFromCart} shopItems={shopItems} />}></Route>
-        </Routes>
-      </BrowserRouter>
+    <AllRoutes productItems={productItems} cartItems={cartItems} addToCart={addToCart} shopItems={shopItems} deleteFromCart={deleteFromCart} checkOut={checkOut}/>
     </>
   )
 }
