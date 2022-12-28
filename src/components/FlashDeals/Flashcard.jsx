@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Slider from "react-slick";
 
+
+// setting up arrows to display next and previous arrows and make them work
 const NextArrow = (props) =>{
     const {onClick} = props;
     return (
@@ -29,7 +31,7 @@ const PrevArrow = (props) =>{
 const Flashcard = ({productItems, addToCart}) => {
 
     const [count, setCount] = useState(0);
-    const increment = (productID) => {
+    const increment = () => {
         setCount(count + 1)
     }
 
@@ -44,8 +46,10 @@ const Flashcard = ({productItems, addToCart}) => {
       };
     return (
         <>
+        {/* Used the react-slick-slider to make a fast and effective slider for the page */}
         <Slider {...settings}>
         {productItems.map((product, index) => {
+            // mapping throught the array of data and using objects in the array to use in the page
             return (
                 <div className="box" key={index}>
                 <div className="product mtop">

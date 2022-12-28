@@ -60,6 +60,7 @@ li {
 }
 
 /* Category CSS */
+
 .contentWidth {
   width: 77%;
 }
@@ -96,6 +97,7 @@ li {
 }
 
 /* slider button of visit collecitons */
+
 .btn-primary {
   background-color: #e94560;
   padding: 13px 40px;
@@ -119,7 +121,6 @@ li {
 .prev, .next{
   cursor: pointer;
 }
-
 
 .discount{
   position: absolute;

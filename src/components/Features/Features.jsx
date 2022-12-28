@@ -5,23 +5,23 @@ const Features = () => {
     const data = [
         {
           cover: 'fa-solid fa-truck-fast',
-          title: "Worldwide Delivery",
-          desc: "We offer competitive prices on our 100 million plus product any range.",
+          title: "Fast Delivery",
+          desc: "We offer fast delivery on our 100 million plus products.",
         },
         {
           cover: 'fa-solid fa-id-card',
           title: "Safe Payment",
-          desc: "We offer competitive prices on our 100 million plus product any range.",
+          desc: "We offer 100% safe payment on our 100 million plus products.",
         },
         {
           cover: 'fa-solid fa-shield',
-          title: "Shop With Confidence ",
-          desc: "We offer competitive prices on our 100 million plus product any range.",
+          title: "Shop With Confidence",
+          desc: "We offer competitive prices on our 100 million plus products so you can shop confidently.",
         },
         {
           cover: 'fa-solid fa-headset',
-          title: "24/7 Support ",
-          desc: "We offer competitive prices on our 100 million plus product any range.",
+          title: "24/7 Support",
+          desc: "We offer 24/7 support to each and every customer so you have no issues shopping.",
         },
         {
             cover: 'fa-solid fa-plane',
@@ -31,7 +31,7 @@ const Features = () => {
           {
             cover: "fa-solid fa-clock",
             title: "24 Hours Delivery",
-            desc: "We offer 24 hours delivery on our 100 million plus product any range.",
+            desc: "We offer 24 hours delivery on our 100 million plus products anywhere.",
           },
       ]
   return (

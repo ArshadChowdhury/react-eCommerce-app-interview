@@ -9,8 +9,10 @@ const Cart = ({ cartItems, addToCart, deleteFromCart , checkOut, removeFromCart}
             <section className="cart-items">
                 <div className="container d_flex">
                     <div className="cart-details">
+                        {/* Checking cartlength if it's 0 thn displaying No items are added in the cart */}
                         {cartItems.length === 0 && <h1 className="no-items product">No items are added in the cart.</h1>}
                         {cartItems.map((item) => {
+                            // mapping through the array of data and using objects in the array to use in the page
                             const productQty = item.price * item.qty
                             return (
                                 <div className="cart-list product d_flex" key={item.id}>
