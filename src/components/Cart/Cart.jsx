@@ -1,5 +1,5 @@
 import React from 'react';
-import "./cart.css";
+import './cart.css';
 
 const Cart = ({ cartItems, addToCart, deleteFromCart , checkOut, removeFromCart}) => {
 

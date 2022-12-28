@@ -1,7 +1,7 @@
 import React from 'react';
 import Categories from './Categories';
 import Slider from './Slider';
-import "./Mainpage.css";
+import "./mainpage.css";
 
 
 const Mainpage = () => {
