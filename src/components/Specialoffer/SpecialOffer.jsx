@@ -1,5 +1,5 @@
 import React from 'react';
-import "./specialoffer.css"
+import './specialoffer.css';
 
 const Specialoffer = () => {
   return (

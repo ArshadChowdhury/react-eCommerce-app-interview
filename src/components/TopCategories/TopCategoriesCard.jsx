@@ -1,7 +1,7 @@
 import React from 'react';
 import topCategoriesdata from "./topCategoriesData";
 import Slider from "react-slick";
-import "./topcategoriescard.css"
+import './topcategoriescard.css';
 
 const TopCategoriesCard = () => {
   const settings = {

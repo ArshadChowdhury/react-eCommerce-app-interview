@@ -1,7 +1,7 @@
 import React from 'react';
 import Categ from './Categ';
 import Shopcart from './Shopcart';
-import "./shop.css";
+import './shop.css';
 
 
 const Shop = ({shopItems, addToCart}) => {

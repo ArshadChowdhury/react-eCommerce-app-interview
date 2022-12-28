@@ -1,6 +1,6 @@
 import React from 'react';
 import newArrivalData from './newArrivalData.js';
-import "./newArrivals.css"
+import './newArrivals.css';
 
 const Newarrivals = () => {
     return (

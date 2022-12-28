@@ -2,7 +2,7 @@ import React , {useState} from "react";
 import AllRoutes from "./allroutes/AllRoutes"
 import FlashDealsData from "./components/FlashDeals/flashDealsData";
 import ShopData from "./components/Shop/shopData";
-import "./App.css";
+import './App.css';
 
 function App() {
   const {productItems} = FlashDealsData;

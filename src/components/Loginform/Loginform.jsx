@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import "./loginform.css";
+import './loginform.css';
 
 const Loginform = () => {
 	return (
