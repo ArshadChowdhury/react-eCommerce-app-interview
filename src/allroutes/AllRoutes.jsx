@@ -12,13 +12,13 @@ import Registration from "../pages/registration/Registration";
 
 
 
-const Pages = ({ productItems, cartItems, addToCart, shopItems, deleteFromCart, checkOut }) => {
+const Pages = ({ productItems, cartItems, addToCart, shopItems, deleteFromCart, checkOut , removeFromCart}) => {
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage productItems={productItems} cartItems={cartItems} addToCart={addToCart} shopItems={shopItems} />} />
-          <Route path="/cart" element={<Cartpage cartItems={cartItems} addToCart={addToCart} deleteFromCart={deleteFromCart} checkOut={checkOut} />} />
+          <Route path="/cart" element={<Cartpage cartItems={cartItems} addToCart={addToCart} deleteFromCart={deleteFromCart} checkOut={checkOut} removeFromCart={removeFromCart} />} />
           <Route path="/login" element={<Login cartItems={cartItems} />} />
           <Route path="/registration" element={<Registration cartItems={cartItems} />} />
         </Routes>

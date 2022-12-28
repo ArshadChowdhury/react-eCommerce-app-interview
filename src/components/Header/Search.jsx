@@ -13,8 +13,8 @@ const Search = ({ cartItems }) => {
             <section className='search'>
                 <div className="container c_flex">
                     <div className="logo width">
-                    <Link to="/">
-                    <img src="assets\main-logo\Daraz-Logo.jpg" alt="" />
+                        <Link to="/">
+                            <img src="assets\main-logo\Daraz-Logo.jpg" alt="" />
                         </Link>
                     </div>
 

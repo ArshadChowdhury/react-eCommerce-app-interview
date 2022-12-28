@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="box">
                         <h1>Md. Arshad</h1>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, quia eius est sunt consectetur rem possimus officia minima reiciendis perspiciatis! Soluta corrupti nesciunt suscipit repellendus adipisci reiciendis veritatis, accusantium saepe?</p>
-                        <div className="icon d_flex">
+                        <div className="icon-footer d_flex">
                             <div className='img d_flex'>
                                 <i className="fa-brands fa-google-play"></i>
                                 <span>Google Play Store</span>

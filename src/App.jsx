@@ -30,13 +30,26 @@ function App() {
       if(cartItems.length <= 0){
         alert("Add something to the cart first to checkout");
       } else {
+        for(let i=0; i<cartItems.length; i++){
+          cartItems.splice(0, cartItems.length);
+        }
+        setCartItems(cartItems.map((item) => item))
         alert("Thanks for shopping with us, come back soon again");
       }
   }
 
+  const removeFromCart =(product) => {
+    const productExists = cartItems.find((item) => item.id === product.id);
+    if (productExists.qty === 1) {
+      setCartItems(cartItems.filter((item) => (item.id !== product.id)))
+    } else{
+      setCartItems(cartItems.map((item) => (item.id === product.id ? { ...productExists, qty: productExists.qty - 1 } : item)))
+    }
+  }
+
   return (
     <>
-    <AllRoutes productItems={productItems} cartItems={cartItems} addToCart={addToCart} shopItems={shopItems} deleteFromCart={deleteFromCart} checkOut={checkOut}/>
+    <AllRoutes removeFromCart={removeFromCart} productItems={productItems} cartItems={cartItems} addToCart={addToCart} shopItems={shopItems} deleteFromCart={deleteFromCart} checkOut={checkOut}/>
     </>
   )
 }

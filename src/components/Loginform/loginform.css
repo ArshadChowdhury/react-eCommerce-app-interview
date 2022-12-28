@@ -1,6 +1,6 @@
 .loginform{
-    height: 60vh;
-    width: 30vw;
+    min-height: 60vh;
+    width: 550px;
     background-color: #ccd2d7; 
     margin: 50px auto;
     border-radius: 10px;
