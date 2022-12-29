@@ -5,7 +5,7 @@ const Search = ({ cartItems }) => {
 
     window.addEventListener("scroll", function () {
         const search = document.querySelector(".search")
-        search.classList.toggle("active", window.scrollY >= 120)
+        search.classList.toggle("active", window.scrollY > 100)
     })
 
     return (

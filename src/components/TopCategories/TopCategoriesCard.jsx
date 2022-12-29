@@ -10,7 +10,18 @@ const TopCategoriesCard = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay:true
+    autoplay:true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      }
+    ]
   };
   return (
     <>
@@ -18,12 +29,12 @@ const TopCategoriesCard = () => {
     {
       topCategoriesdata.map((value, index) => {
         return(
-          <div className="box product" key={index}>
+          <div className="box-cate product" key={index}>
             <div className="nametop d_flex">
               <span className='tLeft'>{value.para}</span>
               <span className='tRight'>{value.desc}</span>
             </div>
-            <div className="img">
+            <div className="img img-cate">
               <img src={value.cover} alt="" />
             </div>
           </div>

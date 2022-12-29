@@ -151,3 +151,50 @@ li {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
+
+@media (max-width:820px) {
+  .product .img img{
+    height: 150px;
+    width: 150px;
+  }
+
+  .product{
+    height: 280px;
+    width: 300px;
+  }
+
+  .flash{
+    margin-top: 50px;
+  }
+
+  .category{
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .categories h4{
+    padding-top: 12px;
+  }
+  .categories span{
+    padding-top: 10px;
+  }
+}
+
+@media (max-width:579px) {
+  .box-category img{
+      display: none;
+    }
+    .category .box{
+      padding: 0;
+    }
+
+    .logo .width a img{
+      height: 50px;
+      width: 50px;
+    }
+
+    .btn-primary{
+      margin-left: 20px;
+    }
+
+}
+

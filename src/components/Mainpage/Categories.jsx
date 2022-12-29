@@ -8,7 +8,7 @@ const Categories = () => {
             <div className="category">{
                 categoryData.map((category, index) => {
                     return (
-                        <div className="box f_flex" key={index}>
+                        <div className="box-category box f_flex" key={index}>
                             <img src={category.categoryImg} alt="no img" />
                             <span>{category.categoryName}</span>
                         </div>

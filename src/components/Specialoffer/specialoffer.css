@@ -5,3 +5,23 @@
 .banner:hover{
     cursor: pointer;
 }
+
+@media (max-width:1580px) {
+    .annoucement .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner img{
+        width: 90vw;
+    }
+}
+
+@media (max-width:820px) {
+    .annoucement .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner img{
+        width: 90vw;
+    }
+}
