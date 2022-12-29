@@ -37,3 +37,12 @@
     position: absolute;
     right: 0;
 }
+
+@media (max-width:820px) {
+    .box-cate{
+        height: 200px;
+        width: 200px;
+    }
+
+    
+}

@@ -160,3 +160,42 @@ background: #e94560;
 color: #fff;
 cursor: pointer;
 }
+
+@media (max-width:360px) {
+    .slider ul li button::before {
+        margin-top: 180px;
+      }
+}
+
+
+@media (max-width:820px) {
+    .left h1{
+        font-size: 25px;
+    }
+
+    .left p{
+        font-size: 18px;
+    }
+
+    .btn-primary{
+        margin-top: 40px;
+    }
+
+    .slider ul li button::before {
+      margin-top: 220px;
+    }
+}
+
+@media (max-width:1580px) {
+    .slider ul li button::before {
+        margin-top: 180px;
+      }
+}
+
+@media (max-width:600px) {
+    .slider ul li button::before {
+        margin-top: 150px;
+      }
+      
+}
+
