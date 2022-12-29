@@ -5,4 +5,4 @@
 ### I'll brush up my tailwind css skills then try the same project with tailwind css once again.
 # You can check the site live here - 
 # https://react-daraz-clone.netlify.app/
-## I've deployed the site on netlify, isn't my best work here but it is what I've managed to do.
+## I've deployed the site on netlify, isn't my best work here but it is decent considering I took a long break from react, I was focusing more on my problem solving skills which was helpful in this project as well actually.
