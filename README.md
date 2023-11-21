@@ -1,7 +1,16 @@
 # This E-commerce site is built with Vite and ReactJS.
-# I've used some react hooks, react-slick-slider, font awesome, react-routers and some other packages in here which made the site look good & feel good while using it.
+
+I've used some react hooks, react-slick-slider, font awesome, react-routers and some other packages in here which made the site look good & feel good while using it.
+
 # You can check the site live here - 
-# https://react-daraz-clone.netlify.app/
+
+https://react-daraz-clone.netlify.app/
+
+
+## Overview of the app - 
+![image](https://github.com/ArshadChowdhury/react-eCommerce-app-interview/assets/86738490/6c2c35a4-1c82-48ea-9eeb-18f3d9659ffc)
+
+
 ## The navigation feels very smooth because of react router dom, the site doesn't actually reload, it just changes some components which are necessary and stated inside by me.
 ## I wrote most of the functions in App.jsx and then sent them down to child components as props and used them in the components.
 ## To run this project you need to clone the repo then install dependencies using "npm install" then run "npm run dev" as vite has added a script stating dev builtin here.
