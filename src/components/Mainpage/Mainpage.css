@@ -1,201 +1,198 @@
-.main-page {
-    margin-top: 20px;
+.slider-container {
+  display: flex;
+  gap: 2rem;
 }
 
 .slider h1 {
-    font-size: 55px;
-    padding-top: 20px;
+  font-size: 55px;
+  padding-top: 20px;
 }
 
 .slider p {
-    margin: 20px 0;
-    font-size: 20px;
+  margin: 20px 0;
+  font-size: 20px;
 }
 
 .slider ul {
-    position: absolute;
-    bottom: 110px;
+  position: absolute;
+  bottom: 110px;
 }
 
 .slider ul li button {
-    background: transparent;
-    color: transparent;
+  background: transparent;
+  color: transparent;
 }
 
 .slider ul li button::before {
-    font-size: 15px;
-    color: #0f3460;
-    position: absolute;
-    top: 2px;
-    left: 0;
-    margin: auto;
+  font-size: 15px;
+  color: #0f3460;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  margin: auto;
 }
 
 .slider .box {
-    display: flex !important;
+  display: flex !important;
 }
 
-
 .slider .box .left {
-    width: 70%;
+  width: 70%;
 }
 
 .slider .box .right {
-    width: 30%;
+  width: 30%;
 }
 
 .slider .box img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .img img {
-    height: 300px;
-    width: 350px;
+  height: 300px;
+  width: 350px;
 }
 
 /* Product Related CSS */
 
 .product {
-    background: #fff;
-    padding: 20px;
-    position: relative;
-    border-radius: 8px;
-    box-shadow: rgb(3 0 71/ 9%) 0 1px 3px;
-    margin: 10px;
+  background: #fff;
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgb(3 0 71/ 9%) 0 1px 3px;
+  margin: 10px;
 }
 
 .product h3 {
-    font-weight: 400;
-    font-size: 17px;
+  font-weight: 400;
+  font-size: 17px;
 }
 
 .product .rate i {
-    font-size: 15px;
-    color: #ffcd4e;
-    margin: 5px 5px 5px 0;
+  font-size: 15px;
+  color: #ffcd4e;
+  margin: 5px 5px 5px 0;
 }
 
 .product .price {
-    display: flex;
-    justify-content: space-between;
-    color: #e94560;
+  display: flex;
+  justify-content: space-between;
+  color: #e94560;
 }
 
-.product button{
-    background: none;
-    color: #e94560;
-    font-size: 20px;
-    border: 1px solid rgb(3 0 71/9%) ;
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    transition: 0.3s;
+.product button {
+  background: none;
+  color: #e94560;
+  font-size: 20px;
+  border: 1px solid rgb(3 0 71/9%);
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
-.product button:hover{
-    cursor: pointer;
-    background: #e94560;
-    color: #fff;
+.product button:hover {
+  cursor: pointer;
+  background: #e94560;
+  color: #fff;
 }
 
-.product-like{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 10px;
-    opacity: 0;
-    transition: 0.3s;
+.product-like {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  opacity: 0;
+  transition: 0.3s;
 }
 
-.product-like label{
-    background-color: #0f3460;
-    padding: 1px 10px;
-    font-size: 12px;
-    color: #fff;
-    border-radius: 50px;
+.product-like label {
+  background-color: #0f3460;
+  padding: 1px 10px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 50px;
 }
 
-.product-like i{
-    font-size: 20px;
-    margin: 10px 3px;
+.product-like i {
+  font-size: 20px;
+  margin: 10px 3px;
 }
 
-.product:hover .product-like{
-    opacity: 1;
-    cursor: pointer;
+.product:hover .product-like {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .control-btn .next,
-.control-btn .prev{
-    position: absolute;
-    top: 40%;
-    width: 50px;
-    height: 50px;
-    line-height: 55px;
-    background: #0f3460;
-    border-radius: 50%;
-    transition: 0.5s;
-    z-index: 5;
+.control-btn .prev {
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  line-height: 55px;
+  background: #0f3460;
+  border-radius: 50%;
+  transition: 0.5s;
+  z-index: 5;
 }
 
-.control-btn .prev{
-    left: -20px;
+.control-btn .prev {
+  left: -20px;
 }
 
-.control-btn .next{
-    right: -20px;
+.control-btn .next {
+  right: -20px;
 }
 
 .control-btn .next i,
-.control-btn .prev i{
-    font-size: 20px;
-    transition: 0.5s;
-    color: #fff;
+.control-btn .prev i {
+  font-size: 20px;
+  transition: 0.5s;
+  color: #fff;
 }
 
 .control-btn .next:hover,
-.control-btn .prev:hover{ 
-background: #e94560;
-color: #fff;
-cursor: pointer;
+.control-btn .prev:hover {
+  background: #e94560;
+  color: #fff;
+  cursor: pointer;
 }
 
-@media (max-width:360px) {
-    .slider ul li button::before {
-        margin-top: 180px;
-      }
+@media (max-width: 360px) {
+  .slider ul li button::before {
+    margin-top: 180px;
+  }
 }
 
+@media (max-width: 820px) {
+  .left h1 {
+    font-size: 25px;
+  }
 
-@media (max-width:820px) {
-    .left h1{
-        font-size: 25px;
-    }
+  .left p {
+    font-size: 18px;
+  }
 
-    .left p{
-        font-size: 18px;
-    }
+  .btn-primary {
+    margin-top: 40px;
+  }
 
-    .btn-primary{
-        margin-top: 40px;
-    }
-
-    .slider ul li button::before {
-      margin-top: 220px;
-    }
+  .slider ul li button::before {
+    margin-top: 220px;
+  }
 }
 
-@media (max-width:1580px) {
-    .slider ul li button::before {
-        margin-top: 180px;
-      }
+@media (max-width: 1580px) {
+  .slider ul li button::before {
+    margin-top: 180px;
+  }
 }
 
-@media (max-width:600px) {
-    .slider ul li button::before {
-        margin-top: 150px;
-      }
-      
+@media (max-width: 600px) {
+  .slider ul li button::before {
+    margin-top: 150px;
+  }
 }
-
