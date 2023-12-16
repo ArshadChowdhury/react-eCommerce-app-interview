@@ -16,7 +16,6 @@ body {
 
 .background {
   background-color: #f6f9fc;
-  /* padding: 70px 0; */
 }
 
 .container {
@@ -83,7 +82,6 @@ li {
 }
 
 .category {
-  /* max-width: 23%; */
   box-shadow: rgb(43 52 69/ 10%) 0 4px 16px;
   height: fit-content;
   border-radius: 5px;
@@ -172,8 +170,6 @@ li {
 }
 
 .product {
-  /* display: flex;
-  justify-content: center; */
   min-height: 8rem !important;
 }
 
@@ -382,16 +378,6 @@ li {
     display: none;
   }
 
-  /* .product .img img {
-    width: 100%;
-    height: auto;
-  } */
-
-  /* .product {
-    display: flex;
-    justify-content: center;
-  } */
-
   .category {
     font-size: 12px;
   }
@@ -407,26 +393,6 @@ li {
 }
 
 @media only screen and (max-width: 579px) {
-  /* .box-category img {
-    display: none;
-  }
-  .category .box {
-    padding: 0;
-  }
-
-  .logo .width a img {
-    height: 50px;
-    width: 50px;
-  }
-
-  .btn-primary {
-    margin-left: 20px;
-  } */
-
-  /* .footer-container {
-    grid-template-columns: repeat(1, 1fr);
-  } */
-
   .app-store-play {
     grid-column: span 1;
   }

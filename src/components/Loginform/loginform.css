@@ -80,7 +80,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 534px) {
+@media only screen and (max-width: 534px) {
   .loginform {
     max-height: 60vh;
     max-width: 100vw;

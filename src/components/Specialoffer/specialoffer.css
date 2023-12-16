@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .banner-images {
     flex-direction: column;
   }
@@ -26,13 +26,3 @@
     width: 100%;
   }
 }
-
-/* @media (max-width:820px) {
-    .annoucement .container{
-        display: flex;
-        flex-direction: column;
-    }
-    .banner img{
-        width: 90vw;
-    }
-} */
