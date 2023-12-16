@@ -1,4 +1,4 @@
-import "./cart.css";
+import "./Cart.css";
 
 const Cart = ({
   cartItems,
