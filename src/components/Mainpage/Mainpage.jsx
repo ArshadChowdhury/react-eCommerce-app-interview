@@ -9,7 +9,7 @@ const Mainpage = () => {
       <section className="main-page">
         <div className="container slider-container">
           <Categories />
-          {/* <Slider /> */}
+          <Slider />
         </div>
       </section>
     </>

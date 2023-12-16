@@ -78,8 +78,8 @@ li {
 /* Category CSS */
 
 .contentWidth {
-  width: 77%;
-  /* max-width: 100%; */
+  max-width: 80%;
+  margin: auto 0;
 }
 
 .category {
@@ -124,11 +124,8 @@ li {
   font-weight: bold;
   color: #fff;
   border-radius: 5px;
+  margin-left: 1px;
   cursor: pointer;
-}
-
-.top {
-  margin-top: 70px;
 }
 
 /* Flash Deals CSS */
@@ -173,6 +170,39 @@ li {
   grid-gap: 20px;
 }
 
+.product {
+  /* display: flex;
+  justify-content: center; */
+  min-height: 8rem !important;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 1440px) {
+  .slick-track {
+    min-height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contentWidth {
+    max-width: 100%;
+  }
+
+  .btn-primary {
+    background-color: #e94560;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .left-row,
   .right-row {
@@ -196,15 +226,15 @@ li {
     align-items: center;
   }
 
-  .product .img img {
-    height: 150px;
-    width: 150px;
-  }
+  /* .product .img img {
+    width: 100%;
+    height: auto;
+  } */
 
-  .product {
-    height: 280px;
-    width: 300px;
-  }
+  /* .product {
+    display: flex;
+    justify-content: center;
+  } */
 
   .flash {
     margin-top: 50px;
@@ -222,7 +252,7 @@ li {
   }
 }
 
-@media (max-width: 579px) {
+/* @media (max-width: 579px) {
   .box-category img {
     display: none;
   }
@@ -238,4 +268,4 @@ li {
   .btn-primary {
     margin-left: 20px;
   }
-}
+} */

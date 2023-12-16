@@ -5,9 +5,7 @@ const Slider = () => {
   return (
     <>
       <section className="slider contentWidth">
-        <div className="container">
-          <Slidecard />
-        </div>
+        <Slidecard />
       </section>
     </>
   );

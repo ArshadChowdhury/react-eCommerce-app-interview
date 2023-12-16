@@ -32,11 +32,41 @@ const Flashcard = ({ productItems, addToCart }) => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 4,
+    speed: 800,
+    slidesToShow: 5,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+          dots: true, // Show dots on smaller screens
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          dots: true, // Show dots on smaller screens
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          dots: true, // Show dots on smaller screens
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          dots: true, // Show dots on even smaller screens
+        },
+      },
+    ],
   };
   return (
     <>
@@ -46,7 +76,7 @@ const Flashcard = ({ productItems, addToCart }) => {
           // mapping throught the array of data and using objects in the array to use in the page
           return (
             <div className="box" key={index}>
-              <div className="product mtop">
+              <div className="product">
                 <div className="img">
                   <span className="discount">{product.discount}% Off</span>
                   <img src={product.img} alt="" />
@@ -56,7 +86,7 @@ const Flashcard = ({ productItems, addToCart }) => {
                   </div>
                 </div>
                 <div className="product-details">
-                  <h3>{product.name}</h3>
+                  <h3 className="truncate">{product.name}</h3>
                   <div className="rate">
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
