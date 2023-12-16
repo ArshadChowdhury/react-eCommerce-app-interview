@@ -1,25 +1,24 @@
-import React from 'react';
-import './specialoffer.css';
+import React from "react";
+import "./specialoffer.css";
 
 const Specialoffer = () => {
   return (
     <>
-    <section className="annoucement background">
-        <div className="container d_flex">
-            <div className="banner-img1 banner"> 
-                <img src="./assets/banner/banner-1.png"/>
-            </div>
-            <div className="banner-img2 banner">
-                <img src="./assets/banner/banner-2.png"/>
-            </div>
-            <div className="banner-img3 banner">
-                <img src="./assets/banner/banner-3.jpg"/>
-            </div>
-            
+      <section className="annoucement">
+        <div className="container banner-images">
+          <div className="banner-img1 banner">
+            <img src="./assets/banner/banner-1.png" />
+          </div>
+          <div className="banner-img2 banner">
+            <img src="./assets/banner/banner-2.png" />
+          </div>
+          <div className="banner-img3 banner">
+            <img src="./assets/banner/banner-3.jpg" />
+          </div>
         </div>
-    </section>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Specialoffer
+export default Specialoffer;

@@ -1,12 +1,19 @@
 .loginform {
-  min-height: 60vh;
-  width: 550px;
+  min-height: 100vh;
+  width: 50%;
   background-color: #ccd2d7;
   margin: 50px auto;
   border-radius: 10px;
 }
 
+.heading-login {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .container-login {
+  height: 100%;
   padding: 40px;
 }
 
@@ -23,24 +30,25 @@
   padding-left: 25px;
 }
 
-.heading h1 {
+.heading-login h1 {
   font-size: 26px;
 }
 
-.heading p {
+.heading-login p {
   font-size: 18px;
   padding-bottom: 30px;
 }
 
-.heading p span a {
+.heading-login p span a {
   color: blue;
 }
-.heading p span a:hover {
+.heading-login p span a:hover {
   text-decoration: underline;
 }
 
 .form {
   display: flex;
+  gap: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;

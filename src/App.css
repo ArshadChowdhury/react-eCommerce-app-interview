@@ -73,6 +73,10 @@ li {
 
 /* Category CSS */
 
+.app-store-play {
+  grid-column: span 2;
+}
+
 .contentWidth {
   max-width: 70%;
   margin: auto 0;
@@ -83,6 +87,11 @@ li {
   box-shadow: rgb(43 52 69/ 10%) 0 4px 16px;
   height: fit-content;
   border-radius: 5px;
+}
+
+.appstore {
+  display: flex;
+  gap: 1rem;
 }
 
 .heading {
@@ -160,12 +169,6 @@ li {
   grid-gap: 20px;
 }
 
-.grid3 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-}
-
 .product {
   /* display: flex;
   justify-content: center; */
@@ -195,9 +198,41 @@ li {
   gap: 2rem;
 }
 
+.annoucement {
+  margin: 4rem 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cart-flex {
+  display: flex;
+  gap: 2rem;
+}
+
+.phone-icon {
+  cursor: pointer;
+  color: white !important;
+}
+
 @media only screen and (max-width: 1440px) {
   .slick-track {
     min-height: 30vh;
+  }
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -227,6 +262,27 @@ li {
   .brand-box {
     display: flex;
     justify-content: center;
+  }
+
+  .grid2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .loginform {
+    width: 75% !important;
+  }
+
+  .cart-flex {
+    flex-direction: column;
   }
 }
 
@@ -265,6 +321,24 @@ li {
     padding: 2rem 0;
   }
 
+  .footer-container {
+    padding: 1rem;
+  }
+  .footer-container {
+    width: 103vw;
+  }
+  .head {
+    width: 103vw !important;
+  }
+
+  .appstore {
+    display: none;
+  }
+
+  .loginform {
+    width: 100% !important;
+  }
+
   /* .product .img img {
     width: 100%;
     height: auto;
@@ -284,10 +358,13 @@ li {
   .categories span {
     padding-top: 10px;
   }
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
-/* @media (max-width: 579px) {
-  .box-category img {
+@media only screen and (max-width: 579px) {
+  /* .box-category img {
     display: none;
   }
   .category .box {
@@ -301,5 +378,20 @@ li {
 
   .btn-primary {
     margin-left: 20px;
+  } */
+
+  /* .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+  } */
+
+  .app-store-play {
+    grid-column: span 1;
   }
-} */
+  .appstore {
+    flex-direction: column;
+  }
+  .grid3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

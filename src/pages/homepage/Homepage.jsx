@@ -21,9 +21,9 @@ const Homepage = ({ productItems, addToCart, cartItems, shopItems }) => {
       <Newarrivals />
       <Discount />
       <Shop shopItems={shopItems} addToCart={addToCart} />
-      {/* <Specialoffer />
+      <Specialoffer />
       <Features />
-      <Footer /> */}
+      <Footer />
     </>
   );
 };

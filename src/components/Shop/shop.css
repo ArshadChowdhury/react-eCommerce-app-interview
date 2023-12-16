@@ -2,6 +2,9 @@
   display: flex;
   gap: 2rem;
 }
+.shop-main {
+  width: 100%;
+}
 
 .shop .category {
   padding: 1.5rem;

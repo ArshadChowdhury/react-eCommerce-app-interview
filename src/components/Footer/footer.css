@@ -1,6 +1,6 @@
 footer {
   background-color: #0f3460;
-  padding: 50px 10px;
+  padding: 50px 70px;
   color: #fff;
 }
 
@@ -45,23 +45,4 @@ footer li {
 
 .icon-footer {
   cursor: pointer;
-}
-
-@media (max-width: 820px) {
-  footer {
-    width: 100vw;
-  }
-  .grid3 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
-  }
-}
-
-@media (max-width: 553px) {
-  .grid3 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 15px;
-  }
 }
