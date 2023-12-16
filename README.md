@@ -1,10 +1,10 @@
-# Daraz
+# Daraz Clone
 
 ## This Daraz clone e-commerce site is built with Vite and ReactJS.
 
 I've used some react hooks, react-slick-slider, font awesome, react-routers, react hot toast and some other packages in here which made the site look good & feel good while using it.
 
-# You can check the site live here - 
+## You can check the site live here - 
 
 https://react-daraz-clone.netlify.app/
 
@@ -23,16 +23,18 @@ I wrote most of the functions in App.jsx and then sent them down to child compon
 
 To run this project locally you'll need to clone the repo then install dependencies using 
 
-```npm install
-#or
-yarn install
+```
+$ npm install
+# or
+$ yarn install
 ``` 
 
 then run 
 
-```npm run dev
-#or
-yarn dev
+```
+$ npm run dev
+# or
+$ yarn dev
 ``` 
 
 as vite has added a script stating dev builtin here it'll execute the script and start the dev server on - http://localhost:5173/.
