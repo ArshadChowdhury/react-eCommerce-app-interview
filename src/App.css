@@ -186,6 +186,15 @@ li {
   padding: 3rem 0;
 }
 
+.huge-discounts {
+  padding: 3rem 0;
+}
+
+.shop-container {
+  display: flex;
+  gap: 2rem;
+}
+
 @media only screen and (max-width: 1440px) {
   .slick-track {
     min-height: 30vh;
@@ -204,6 +213,20 @@ li {
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .shop-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .chead {
+    justify-content: center;
+  }
+
+  .brand-box {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -238,6 +261,10 @@ li {
     padding: 2rem 0;
   }
 
+  .huge-discounts {
+    padding: 2rem 0;
+  }
+
   /* .product .img img {
     width: 100%;
     height: auto;
@@ -250,7 +277,6 @@ li {
 
   .category {
     font-size: 12px;
-    margin-top: 5px;
   }
   .categories h4 {
     padding-top: 12px;

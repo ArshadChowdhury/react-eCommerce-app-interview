@@ -78,6 +78,21 @@
   box-shadow: rgb(3 0 71/ 9%) 0 1px 3px;
 }
 
+.product-shop {
+  background: #fff;
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgb(3 0 71/ 9%) 0 1px 3px;
+}
+
+.product-content {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .product h3 {
   font-weight: 400;
   font-size: 17px;
@@ -188,6 +203,10 @@
   .slider .box {
     gap: 1rem;
   }
+
+  .product-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -252,6 +271,10 @@
 
   .control-btn .next {
     right: -10px;
+  }
+
+  .product-content {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   /* .left h1 {
