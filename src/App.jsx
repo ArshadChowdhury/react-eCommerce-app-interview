@@ -35,9 +35,19 @@ function App() {
   // if it has the item it decreases the quantity by 1 with each click, if it has less than 1 number of item it removes entirely from the cart
   const deleteFromCart = (product) => {
     const productExists = cartItems.find((item) => item.id === product.id);
+    // if (productExists.qty === 1) {
+    //   setCartItems(cartItems.filter((item) => item.id !== product.id));
+    //   toast.success("Item removed from cart");
+    // }
     if (productExists.qty === 1) {
-      setCartItems(cartItems.filter((item) => item.id !== product.id));
-      toast.success("Item removed from cart");
+      const shouldRemove = window.confirm(
+        "Are you sure you want to remove this item from the cart?"
+      );
+
+      if (shouldRemove) {
+        setCartItems(cartItems.filter((item) => item.id !== product.id));
+        toast.success("Item removed from cart");
+      }
     } else {
       setCartItems(
         cartItems.map((item) =>
@@ -51,22 +61,48 @@ function App() {
   };
   // This function is used for the checkout button it takes cartItems as input and if the length of items in it is 0 it alerts add something to cart first
   const checkOut = (cartItems) => {
+    // if (cartItems.length <= 0) {
+    //   toast.error("Add items in cart to checkout");
+    // } else {
+    //   const confirmOrder = window.confirm(
+    //     "Are you sure you want to order all these products ?"
+    //   );
+
+    //   if (confirmOrder) {
+    //     setCartItems(cartItems.map((item) => item));
+    //     toast.success("Order placed, Thanks for shopping with us");
+    //     // but if it has items in it thn it shows a toast saying thanks for shopping with us
+    //     for (let i = 0; i < cartItems.length; i++) {
+    //       cartItems.splice(0, cartItems.length);
+    //     }
+    //   }
+    // }
+
     if (cartItems.length <= 0) {
-      toast.error("Add items in cart to checkout");
+      toast.error("Add an item in the cart to checkout");
     } else {
-      // but if it has items in it thn it alerts saying thanks for shopping with us
-      for (let i = 0; i < cartItems.length; i++) {
-        cartItems.splice(0, cartItems.length);
+      const confirmOrder = window.confirm(
+        "Are you sure you want to order all these products?"
+      );
+
+      if (confirmOrder) {
+        // Clear the cart by setting it to a new array or an empty array
+        setCartItems([]);
+        toast.success("Order placed, Thanks!!");
       }
-      setCartItems(cartItems.map((item) => item));
-      toast.success("Order placed for these items");
     }
   };
 
   // This function removes an item from the cart entirely, filtering out the values which doesn't have the same id as those clicked
   const removeFromCart = (product) => {
-    setCartItems(cartItems.filter((item) => item.id !== product.id));
-    toast.success("Item removed from cart");
+    const shouldRemove = window.confirm(
+      "Are you sure you want to remove this item from the cart?"
+    );
+
+    if (shouldRemove) {
+      setCartItems(cartItems.filter((item) => item.id !== product.id));
+      toast.success("Item removed from cart");
+    }
   };
 
   return (

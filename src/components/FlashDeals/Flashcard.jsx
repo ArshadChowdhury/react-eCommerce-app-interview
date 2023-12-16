@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import Slider from "react-slick";
 
 // setting up arrows to display next and previous arrows and make them work
@@ -86,7 +87,9 @@ const Flashcard = ({ productItems, addToCart }) => {
                   </div>
                 </div>
                 <div className="product-details">
-                  <h3 className="truncate">{product.name}</h3>
+                  <Link to={`/all-products/${product.id}`}>
+                    <h3 className="truncate">{product.name}</h3>
+                  </Link>
                   <div className="rate">
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>

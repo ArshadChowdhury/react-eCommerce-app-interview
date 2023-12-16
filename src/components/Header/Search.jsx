@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Search = ({ cartItems }) => {
-  // window.addEventListener("scroll", function () {
-  //   const search = document.querySelector(".search");
-  //   search.classList.toggle("active", window.scrollY > 100);
-  // });
+  window.addEventListener("scroll", function () {
+    const search = document.querySelector(".search");
+    search.classList.toggle("active", window.scrollY > 100);
+  });
 
   return (
     <>
@@ -13,7 +13,7 @@ const Search = ({ cartItems }) => {
         <div className="container c_flex">
           <div className="logo width">
             <Link to="/">
-              <img src="assets\main-logo\Daraz-Logo.jpg" alt="" />
+              <img src="/assets/main-logo/Daraz-Logo.jpg" alt="" />
             </Link>
           </div>
 

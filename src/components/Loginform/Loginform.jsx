@@ -1,8 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 import "./loginform.css";
 
 const Loginform = () => {
+  function handleLogin(event) {
+    event.preventDefault();
+    return toast.error("Login functionality is not live yet");
+  }
+
   return (
     <>
       <section className="loginform">
@@ -17,7 +23,7 @@ const Loginform = () => {
                 </span>
               </p>
             </div>
-            <form className="form" action="">
+            <form onSubmit={handleLogin} className="form" action="">
               <label className="label">
                 Phone No
                 <input type="text" name="name" />

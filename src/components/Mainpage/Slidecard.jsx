@@ -1,10 +1,17 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import shoppingData from "./shoppingData";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const Slidecard = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    // Redirect the user to the desired page
+    navigate("/all-products"); // Replace '/collections' with the actual path
+  };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -25,7 +32,9 @@ const Slidecard = () => {
               <div className="left">
                 <h1>{value.title}</h1>
                 <p>{value.desc}</p>
-                <button className="btn-primary">Visit Collections</button>
+                <button onClick={handleButtonClick} className="btn-primary">
+                  Visit Collections
+                </button>
               </div>
               <div className="right">
                 <img src={value.cover} alt="" />
