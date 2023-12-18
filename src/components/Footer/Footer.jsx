@@ -13,11 +13,11 @@ const Footer = () => {
           reiciendis veritatis, accusantium saepe?
         </p>
         <div className="icon-footer appstore">
-          <div className="img d_flex">
+          <div className="img d_flex logo-text">
             <i className="fa-brands fa-google-play"></i>
             <span>Google Play Store</span>
           </div>
-          <div className="img d_flex">
+          <div className="img d_flex logo-text">
             <i className="fa-brands fa-app-store-ios"></i>
             <span>Apple App Store</span>
           </div>

@@ -5,6 +5,7 @@ import "./allproducts.css";
 const Allproducts = ({ allProductsData, addToCart }) => {
   return (
     <>
+      <h1 className="page-header">All Products</h1>
       <div className="container grid3">
         {allProductsData.map((product, index) => {
           return (
