@@ -19,16 +19,24 @@ const Navbar = () => {
             onClick={() => setMobileMenu(false)}
           >
             <li>
-              <Link to="/">Home</Link>
+              <Link className="link-hover" to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/all-products">All Products</Link>
+              <Link className="link-hover" to="/all-products">
+                All Products
+              </Link>
             </li>
             <li>
-              <Link to="/login">Login</Link>
+              <Link className="link-hover" to="/login">
+                Login
+              </Link>
             </li>
             <li>
-              <Link to="/registration">Registration</Link>
+              <Link className="link-hover" to="/registration">
+                Registration
+              </Link>
             </li>
             {/* <li>
               <Link to="/admin-dashboard">Admin Dashboard</Link>

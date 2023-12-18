@@ -36,7 +36,11 @@ const Categ = () => {
         </div>
         {data.map((value, index) => {
           return (
-            <div className="box brand-box" key={index}>
+            <div
+              style={{ display: "flex", borderRadius: "10px" }}
+              className="box brand-box"
+              key={index}
+            >
               <img src={value.cateImg} alt="" />
               <span>{value.cateName}</span>
             </div>

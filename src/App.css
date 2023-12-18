@@ -136,7 +136,8 @@ li {
 
 .heading i {
   color: #e94560;
-  margin: 10px;
+  /* margin: 10px; */
+  font-size: 2rem;
 }
 
 .prev,
@@ -245,6 +246,17 @@ li {
   text-decoration: underline;
 }
 
+.link-hover:hover {
+  color: #e94560;
+}
+
+.heading-right {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1440px) {
   .slick-track {
     min-height: 30vh;
@@ -284,6 +296,7 @@ li {
   .brand-box {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .grid2 {
