@@ -32,12 +32,20 @@ const Slidecard = () => {
               <div className="left">
                 <h1>{value.title}</h1>
                 <p>{value.desc}</p>
-                <button onClick={handleButtonClick} className="btn-primary">
+                <button
+                  onClick={handleButtonClick}
+                  className="btn-primary"
+                  aria-hidden="false"
+                >
                   Visit Collections
                 </button>
               </div>
               <div className="right">
-                <img src={value.cover} alt="" />
+                <img
+                  src={value.cover}
+                  alt="slider-image"
+                  fetchpriority="high"
+                />
               </div>
             </div>
           );

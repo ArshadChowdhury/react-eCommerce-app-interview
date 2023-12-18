@@ -13,7 +13,7 @@ const Allproducts = ({ allProductsData, addToCart }) => {
               <div className="product mtop">
                 <div className="img">
                   <span className="discount">{product.discount}% Off</span>
-                  <img src={product.img} alt="" />
+                  <img src={product.img} alt="product-image" />
                 </div>
                 <div className="product-details">
                   <h3>{product.name}</h3>
@@ -29,7 +29,10 @@ const Allproducts = ({ allProductsData, addToCart }) => {
                   </div>
                   <div className="price">
                     <h4>{product.price}.00</h4>
-                    <button onClick={() => addToCart(product)}>
+                    <button
+                      aria-label="Add to cart"
+                      onClick={() => addToCart(product)}
+                    >
                       <i className="fa fa-plus"></i>
                     </button>
                   </div>

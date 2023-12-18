@@ -31,7 +31,7 @@ const Singleproduct = ({ allProductsData, addToCart }) => {
                     </div>
                   </div>
                   <button
-                    className="add-to-cart"
+                    aria-label="Add to cart"
                     onClick={() => addToCart(product)}
                   >
                     Add To Cart

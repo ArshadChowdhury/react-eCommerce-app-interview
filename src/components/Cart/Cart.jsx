@@ -19,7 +19,7 @@ const Cart = ({
             {/* Checking cartlength if it's 0 thn displaying No items are added in the cart */}
             {cartItems.length === 0 && (
               <h1 className="no-items product">
-                No items are added in the cart.
+                There are no items in the cart.
               </h1>
             )}
             {cartItems.map((item) => {

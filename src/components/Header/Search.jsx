@@ -12,7 +12,7 @@ const Search = ({ cartItems }) => {
       <section className="search">
         <div className="container c_flex">
           <div className="logo width">
-            <Link to="/">
+            <Link aria-label="Daraz Home" to="/">
               <img src="/assets/main-logo/Daraz-Logo.jpg" alt="" />
             </Link>
           </div>
@@ -24,11 +24,11 @@ const Search = ({ cartItems }) => {
           </div>
 
           <div className="icon f_flex width">
-            <Link to="/login">
+            <Link aria-label="Login page" to="/login">
               <i className="fa fa-user icon-circle"></i>
             </Link>
             <div className="cart">
-              <Link to="/cart">
+              <Link aria-label="Cart" to="/cart">
                 <i className="fa fa-shopping-bag icon-circle"></i>
                 <span>{cartItems.length === 0 ? 0 : cartItems.length}</span>
               </Link>

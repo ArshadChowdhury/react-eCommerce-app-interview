@@ -7,7 +7,7 @@ const NextArrow = (props) => {
   const { onClick } = props;
   return (
     <div className="control-btn" onClick={onClick}>
-      <button className="next">
+      <button aria-label="Next slide" className="next">
         <i className="fa fa-long-arrow-alt-right"></i>
       </button>
     </div>
@@ -17,7 +17,7 @@ const PrevArrow = (props) => {
   const { onClick } = props;
   return (
     <div className="control-btn" onClick={onClick}>
-      <button className="prev">
+      <button aria-label="Previous slide" className="prev">
         <i className="fa fa-long-arrow-alt-left"></i>
       </button>
     </div>
@@ -99,7 +99,10 @@ const Flashcard = ({ productItems, addToCart }) => {
                   </div>
                   <div className="price">
                     <h4>{product.price}.00</h4>
-                    <button onClick={() => addToCart(product)}>
+                    <button
+                      aria-label="Add to cart"
+                      onClick={() => addToCart(product)}
+                    >
                       <i className="fa fa-plus"></i>
                     </button>
                   </div>

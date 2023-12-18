@@ -34,7 +34,10 @@ const Shopcart = ({ shopItems, addToCart }) => {
                 </div>
                 <div className="price">
                   <h4>{product.price}.00</h4>
-                  <button onClick={() => addToCart(product)}>
+                  <button
+                    aria-label="Add to cart"
+                    onClick={() => addToCart(product)}
+                  >
                     <i className="fa fa-plus"></i>
                   </button>
                 </div>

@@ -9,7 +9,10 @@ const Newarrivals = () => {
         <div className="container">
           <div className="heading">
             {/* <div className="heading-left row f_flex"> */}
-            <img src="https://img.icons8.com/glyph-neue/64/26e07f/new.png" />
+            <img
+              src="https://img.icons8.com/glyph-neue/64/26e07f/new.png"
+              alt="new-arrivals-logo"
+            />
             <h2>New Arrivals</h2>
             {/* </div> */}
             {/* <div className="heading-right row">

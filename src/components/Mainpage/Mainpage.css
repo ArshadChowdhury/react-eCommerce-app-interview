@@ -5,12 +5,12 @@
 }
 
 .slider h1 {
-  font-size: 2rem;
+  font-size: 2.7rem;
 }
 
 .slider p {
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .slick-track {
@@ -210,7 +210,7 @@
   }
 
   .slider h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .slider p {
