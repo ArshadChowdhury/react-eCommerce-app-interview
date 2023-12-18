@@ -273,6 +273,23 @@ li {
   text-align: center;
 }
 
+.product-details h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.cart-add-btn {
+  background: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cart-add-btn:hover {
+  color: white;
+  background-color: gray;
+}
+
 @media only screen and (max-width: 1440px) {
   .slick-track {
     min-height: 30vh;
@@ -431,5 +448,20 @@ li {
   .grid3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cart-responsive {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .cartControl {
+    justify-content: start;
+  }
+  .cart-items-function {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }

@@ -26,7 +26,10 @@ const Cart = ({
               // mapping through the array of data and using objects in the array to use in the page
               const productQty = item.price * item.qty;
               return (
-                <div className="cart-list product d_flex" key={item.id}>
+                <div
+                  className="cart-list product d_flex cart-responsive"
+                  key={item.id}
+                >
                   <div className="img">
                     <img
                       src={item.img}

@@ -28,7 +28,7 @@ const Search = ({ cartItems }) => {
               <i className="fa fa-user icon-circle"></i>
             </Link>
             <div className="cart">
-              <Link aria-label="Cart" to="/cart">
+              <Link to="/cart">
                 <i className="fa fa-shopping-bag icon-circle"></i>
                 <span>{cartItems.length === 0 ? 0 : cartItems.length}</span>
               </Link>

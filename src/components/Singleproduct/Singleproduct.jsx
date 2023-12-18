@@ -32,6 +32,7 @@ const Singleproduct = ({ allProductsData, addToCart }) => {
                   </div>
                   <button
                     aria-label="Add to cart"
+                    className="cart-add-btn"
                     onClick={() => addToCart(product)}
                   >
                     Add To Cart
