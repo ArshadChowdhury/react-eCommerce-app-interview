@@ -26,7 +26,7 @@ const Registrationform = () => {
               <input type="text" name="name" />
             </label>
             <label className="label">
-              Phone No
+              Username
               <input type="text" name="name" />
             </label>
             <label className="label">

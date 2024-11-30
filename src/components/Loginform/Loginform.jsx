@@ -25,7 +25,7 @@ const Loginform = () => {
             </div>
             <form onSubmit={handleLogin} className="form" action="">
               <label className="label">
-                Phone No
+                Username
                 <input type="text" name="name" />
               </label>
               <label className="label">

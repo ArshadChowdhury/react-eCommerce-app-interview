@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AllRoutes from "./allroutes/AllRoutes";
+import { useNavigate } from "react-router-dom";
 import FlashDealsData from "./components/FlashDeals/flashDealsData";
 import ShopData from "./components/Shop/shopData";
 import AllProductsData from "./components/Allproducts/allProductsData";
@@ -11,8 +12,11 @@ function App() {
   const { productItems } = FlashDealsData;
   const { shopItems } = ShopData;
   const { allProductsData } = AllProductsData;
+  const navigate = useNavigate();
+
   // using useState hooks to change and store items in  the cart here
   const [cartItems, setCartItems] = useState([]);
+
   // This is a function to add items in the cart it takes the product and checks within the cart to see if there's already added in cart
   // if it already has it it increases the quantity by 1 with each click, if it doesn't exist in cart it adds it to the cart
   const addToCart = (product) => {
@@ -78,18 +82,27 @@ function App() {
     //   }
     // }
 
-    if (cartItems.length <= 0) {
-      toast.error("Add an item in the cart to checkout");
-    } else {
-      const confirmOrder = window.confirm(
-        "Are you sure you want to order all these products?"
-      );
+    const loggedIn = true;
 
-      if (confirmOrder) {
-        // Clear the cart by setting it to a new array or an empty array
-        setCartItems([]);
-        toast.success("Order placed, Thanks!!");
+    if (loggedIn) {
+      if (cartItems.length <= 0) {
+        toast.error("Add an item in the cart to checkout");
+      } else {
+        const confirmOrder = window.confirm(
+          "Are you sure you want to order all these products?"
+        );
+
+        if (confirmOrder) {
+          // Clear the cart by setting it to a new array or an empty array
+          setCartItems([]);
+          toast.success("Order placed, Thanks!!");
+        }
       }
+    } else {
+      toast("You must login first!", {
+        icon: "🤯",
+      });
+      navigate("/login", { replace: true });
     }
   };
 
